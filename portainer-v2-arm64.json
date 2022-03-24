@@ -65,13 +65,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/calibre-web:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/calibre-web-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/calibre-web-icon.png",
 			"name": "calibre-web",
 			"platform": "linux",
 			"ports": [
@@ -104,7 +104,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -128,7 +128,7 @@
 				}
 			],
 			"image": "linuxserver/code-server:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/code-server.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/code-server.png",
 			"name": "code-server",
 			"platform": "linux",
 			"ports": [
@@ -156,7 +156,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -167,7 +167,7 @@
 				}
 			],
 			"image": "linuxserver/deluge:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/deluge-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/deluge-icon.png",
 			"name": "deluge",
 			"platform": "linux",
 			"ports": [
@@ -204,13 +204,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/duplicati:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/duplicati-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/duplicati-icon.png",
 			"name": "duplicati",
 			"platform": "linux",
 			"ports": [
@@ -249,7 +249,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -260,7 +260,7 @@
 				}
 			],
 			"image": "linuxserver/emby:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/emby.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/emby.png",
 			"name": "emby",
 			"platform": "linux",
 			"ports": [
@@ -292,7 +292,7 @@
 			],
 			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
 			"image": "filebrowser/filebrowser:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/filebrowser.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "The default user and password is admin/admin.",
 			"platform": "linux",
@@ -316,7 +316,7 @@
 			],
 			"description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
 			"image": "pawelmalak/flame:multiarch",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/flame.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/flame.png",
 			"name": "Flame",
 			"platform": "linux",
 			"ports": [
@@ -349,7 +349,7 @@
 				"Tools"
 			],
 			"description": "Gitea with Mariadb: A painless self-hosted Git service.",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/gitea.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/gitea.png",
 			"name": "gitea-mysql",
 			"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
 			"env": [
@@ -359,7 +359,7 @@
 					"name": "USER_UID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "USER_GID",
 					"name": "USER_GID"
 				},
@@ -412,13 +412,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/heimdall:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/heimdall-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/heimdall-icon.png",
 			"name": "heimdall",
 			"platform": "linux",
 			"ports": [
@@ -442,7 +442,7 @@
 			],
 			"description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
 			"image": "b4bz/homer:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/homer.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/homer.png",
 			"name": "homer",
 			"note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
 			"platform": "linux",
@@ -454,7 +454,7 @@
 			"type": 1,
 			"env": [
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -488,13 +488,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/jackett:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/jacket-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/jacket-icon.png",
 			"name": "jackett",
 			"platform": "linux",
 			"ports": [
@@ -538,7 +538,7 @@
 				}
 			],
 			"image": "jaymoulin/jdownloader:1.4.3",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/jdownloader.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/jdownloader.png",
 			"name": "JDownloader",
 			"platform": "linux",
 			"ports": [
@@ -570,13 +570,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/lazylibrarian:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/lazylibrarian-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/lazylibrarian-icon.png",
 			"name": "lazylibrarian",
 			"platform": "linux",
 			"ports": [
@@ -610,7 +610,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -636,7 +636,7 @@
 				}
 			],
 			"image": "linuxserver/mariadb:arm64v8-latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/mariadb-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/mariadb-icon.png",
 			"name": "mariadb",
 			"platform": "linux",
 			"ports": [
@@ -659,7 +659,7 @@
 			],
 			"description": "A self-hosted recipe manager and meal planner",
 			"image": "hkotel/mealie:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/mealie.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/mealie.png",
 			"name": "mealie",
 			"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available \u003ca href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -682,7 +682,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -746,13 +746,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/nginx:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/nginx-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/nginx-icon.png",
 			"name": "nginx",
 			"platform": "linux",
 			"ports": [
@@ -775,7 +775,7 @@
 				"Tools"
 			],
 			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/novaspirit/pi-hosted/tree/master/docs installing the template",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/proxy_mgr.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/proxy_mgr.png",
 			"name": "nginx-proxy-manager",
 			"platform": "linux",
 			"ports": [
@@ -790,7 +790,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -836,13 +836,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/openvpn-as:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/openvpn-as-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/openvpn-as-icon.png",
 			"name": "openvpn-as",
 			"platform": "linux",
 			"ports": [
@@ -867,7 +867,7 @@
 			],
 			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
 			"image": "pihole/pihole:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/pihole.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/pihole.png",
 			"name": "pihole",
 			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53.",
 			"platform": "linux",
@@ -905,7 +905,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -916,7 +916,7 @@
 				}
 			],
 			"image": "linuxserver/plex:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/plex-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/plex-icon.png",
 			"name": "plex",
 			"network": "host",
 			"platform": "linux",
@@ -950,7 +950,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -966,7 +966,7 @@
                 }
 			],
 			"image": "linuxserver/qbittorrent:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/qbittorrent-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/qbittorrent-icon.png",
 			"name": "qbittorrent",
 			"platform": "linux",
 			"ports": [
@@ -1001,13 +1001,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/radarr:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/radarr.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/radarr.png",
 			"name": "radarr",
 			"platform": "linux",
 			"ports": [
@@ -1038,7 +1038,7 @@
 			],
 			"description": "Snippet Box is a simple self-hosted app for organizing your code snippets.",
 			"image": "pawelmalak/snippet-box:arm",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/snibox.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/snibox.png",
 			"name": "Snippet-box",
 			"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
 			"platform": "linux",
@@ -1068,13 +1068,13 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
 			"image": "linuxserver/sonarr:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/sonarr-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/sonarr-icon.png",
 			"name": "sonarr",
 			"platform": "linux",
 			"ports": [
@@ -1105,7 +1105,7 @@
 			],
 			"description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
 			"image": "linuxserver/wikijs:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/wikijs.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/wikijs.png",
 			"name": "wikijs",
 			"platform": "linux",
 			"ports": [
@@ -1132,7 +1132,7 @@
 			],
 			"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
 			"image": "hectormolinero/qemu-win2000:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/win2000.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/win2000.png",
 			"note":"Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
 			"name": "win2000",
 			"platform": "linux",
@@ -1158,7 +1158,7 @@
 			],
 			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
 			"image": "weejewel/wg-easy:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/wireguard.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/wireguard.png",
 			"name": "wg-easy",
 			"platform": "linux",
 			"title": "Wireguard Server",
@@ -1194,7 +1194,7 @@
 					"label":"Database root password"
 				}
 			],
-			"logo":"https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/wordpress.png",
+			"logo":"https://raw.githubusercontent.com/Steveincr/template/main/images/wordpress.png",
 			"note":"Deploys a Wordpress instance connected to a MySQL database.",
 
 			"platform":"linux",
@@ -1213,7 +1213,7 @@
 			],
 			"description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
 			"image": "tzahi12345/youtubedl-material:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/pi-hosted/master/images/ytdlm.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/ytdlm.png",
 			"name": "youtubedl-material",
 			"platform": "linux",
 			"ports": [
