@@ -400,6 +400,30 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A clientless remote desktop gateway.",
+			"image": "maxwaldorf/guacamole:latest",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/guacamole.png",
+			"name": "guacamole",
+			"note": "The default username is guacadmin with password guacadmin.",
+			"platform": "linux",
+			"ports": [
+				"4080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Guacamole",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/docker/config/Guacamole",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Tools",
 				"Web",
 				"Other"
