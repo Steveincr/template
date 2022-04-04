@@ -31,6 +31,5 @@ services:
       PUID: 1000
       PGID: 1000
       TZ: 'America/Costa_Rica'
-
     volumes:
       - /docker/config/nginx-proxy-manager/database:/config
