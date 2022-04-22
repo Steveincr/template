@@ -577,7 +577,7 @@
 					"container": "/opt/JDownloader/cfg"
 				},
 				{
-					"bind": "/docker/download",
+					"bind": "/data/downloads",
 					"container": "/opt/JDownloader/Downloads"
 				}
 			]
@@ -611,13 +611,16 @@
 			"type": 1,
 			"volumes": [
 				{
+					"bind": "/docker/config/LazyLib",
 					"container": "/config"
 				},
 				{
+					"bind": "/data/downloads",
 					"container": "/downloads"
 				},
 				{
-					"container": "/books"
+					"container": "/books",
+					"bind": "/data/media/books"
 				}
 			]
 		},
