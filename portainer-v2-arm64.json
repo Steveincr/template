@@ -82,7 +82,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/docker/media/books",
+					"bind": "/data/media/books",
 					"container": "/books"
 				},
 				{
@@ -183,7 +183,7 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/docker/download",
+					"bind": "/docker/downloads",
 					"container": "/downloads"
 				}
 			]
@@ -276,11 +276,11 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/docker/media/tv",
+					"bind": "/data/media/tv",
 					"container": "/data/tvshows"
 				},
 				{
-					"bind": "/docker/media/movies",
+					"bind": "/data/media/movies",
 					"container": "/data/movies"
 				}
 			]
@@ -533,7 +533,7 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/docker/data",
+					"bind": "/data",
 					"container": "/data"
 				}
 			]
@@ -956,11 +956,11 @@
 					"container": "/config"
 				},
 				{
-					"bind": "docker/data/media/tv",
+					"bind": "/data/media/tv",
 					"container": "/tv"
 				},
 				{
-					"bind": "/docker/data/media/movies",
+					"bind": "/data/media/movies",
 					"container": "/movies"
 				}
 			]
@@ -1010,7 +1010,7 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/docker/data",
+					"bind": "/data/downloads",
 					"container": "/downloads"
 				}
 			]
@@ -1049,11 +1049,11 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/docker/data",
+					"bind": "/data",
 					"container": "/data"
 				},
 				{
-					"bind": "/docker/data/media/movies",
+					"bind": "/data/media/movies",
 					"container": "/movies"
 				}
 			]
@@ -1116,11 +1116,11 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/docker/data/media/tv",
+					"bind": "/data/media/tv",
 					"container": "/tv"
 				},
 				{
-					"bind": "/docker/data",
+					"bind": "/data",
 					"container": "/data"
 				}
 			]
@@ -1336,19 +1336,19 @@
 					"container": "/app/appdata"
 				},
 				{
-					"bind": "/docker/data/Youtube/Video",
+					"bind": "/data/Youtube/Video",
 					"container": "/app/video"
 				},
 				{
-					"bind": "/docker/data/Youtube/Subscriptions",
+					"bind": "/data/Youtube/Subscriptions",
 					"container": "/app/subscriptions"
 				},
 				{
-					"bind": "/docker/data/Youtube/Users",
+					"bind": "/data/Youtube/Users",
 					"container": "/app/users"
 				},
 				{
-					"bind": "/docker/data/Youtube/Audio",
+					"bind": "/data/Youtube/Audio",
 					"container": "/app/audio"
 				}
 			]
