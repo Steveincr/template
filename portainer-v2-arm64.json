@@ -786,12 +786,12 @@
 					"name": "TZ"
 				},
 				{
-					"default": "acad1a"
+					"default": "acad1a",
 					"label": "DATABASE_PASSWORD",
 					"name": "DATABASE_PASSWORD"
 				},
 				{
-					"default": "acad1a"
+					"default": "acad1a",
 					"label": "MYSQL_ROOT_PASSWORD",
 					"name": "MYSQL_ROOT_PASSWORD"
 				},
