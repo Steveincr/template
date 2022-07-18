@@ -249,7 +249,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1000",
+					"default": "1003",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -259,7 +259,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/emby:latest",
+			"image": "linuxserver/emby:4.7.5",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/emby.png",
 			"name": "emby",
 			"platform": "linux",
