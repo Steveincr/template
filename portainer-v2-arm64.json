@@ -259,7 +259,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/emby:4.7.2",
+			"image": "linuxserver/emby:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/emby.png",
 			"name": "emby",
 			"platform": "linux",
