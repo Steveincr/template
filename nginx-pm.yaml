@@ -21,7 +21,7 @@ services:
       - 81:81
     restart: unless-stopped
   db:
-    image: linuxserver/mariadb:latest
+    image: yobasystems/alpine-mariadb:latest
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: 'acad1a'
@@ -29,7 +29,7 @@ services:
       MYSQL_USER: npm
       MYSQL_PASSWORD: 'acad1a'
       PUID: 1000
-      PGID: 1000
+      PGID: 1003
       TZ: 'America/Costa_Rica'
     volumes:
       - /docker/config/nginx-proxy-manager/database:/config
