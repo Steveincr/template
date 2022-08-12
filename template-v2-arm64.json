@@ -1,7 +1,6 @@
 {
 	"version": "2",
-	"templates": [
-		{
+	"templates": [{
 			"categories": [
 				"Other",
 				"Tools"
@@ -18,14 +17,11 @@
 			"restart_policy": "unless-stopped",
 			"title": "Archivebox",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/archivebox",
-					"container": "/data"
-				}
-			],
-			"env": [
-				{
+			"volumes": [{
+				"bind": "/docker/config/archivebox",
+				"container": "/data"
+			}],
+			"env": [{
 					"default": "*",
 					"label": "ALLOWED_HOSTS",
 					"name": "ALLOWED_HOSTS"
@@ -58,8 +54,7 @@
 				"Books"
 			],
 			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -80,8 +75,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Calibre Web",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/data/media/books",
 					"container": "/books"
 				},
@@ -97,8 +91,7 @@
 				"Tools"
 			],
 			"description": "Code-server is VS Code running on a remote server, accessible through the browser.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -137,20 +130,17 @@
 			"restart_policy": "unless-stopped",
 			"title": "Code Server",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/Code-Server",
-					"container": "/config"
-				}
-			]
+			"volumes": [{
+				"bind": "/docker/config/Code-Server",
+				"container": "/config"
+			}]
 		},
 		{
 			"categories": [
 				"Downloaders"
 			],
 			"description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -177,8 +167,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Deluge",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Deluge",
 					"container": "/config"
 				},
@@ -197,8 +186,7 @@
 				"Tools"
 			],
 			"description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -219,8 +207,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Duplicati",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Duplicati",
 					"container": "/config"
 				},
@@ -242,8 +229,7 @@
 				"Photos"
 			],
 			"description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -270,8 +256,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Emby",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Emby",
 					"container": "/config"
 				},
@@ -302,12 +287,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "FileBrowser",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/",
-					"container": "/srv"
-				}
-			]
+			"volumes": [{
+				"bind": "/",
+				"container": "/srv"
+			}]
 		},
 		{
 			"categories": [
@@ -322,18 +305,15 @@
 			"ports": [
 				"5005:5005/tcp"
 			],
-			"env": [
-				{
-					"default": "",
-					"label": "Flame Password",
-					"name": "PASSWORD"
-				}
-			],
+			"env": [{
+				"default": "",
+				"label": "Flame Password",
+				"name": "PASSWORD"
+			}],
 			"restart_policy": "unless-stopped",
 			"title": "Flame",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Flame/data",
 					"container": "/app/data"
 				},
@@ -352,8 +332,7 @@
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/gitea.png",
 			"name": "gitea-mysql",
 			"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "USER_UID",
 					"name": "USER_UID"
@@ -363,11 +342,11 @@
 					"label": "USER_GID",
 					"name": "USER_GID"
 				},
-                {
+				{
 					"default": "America/Costa_Rica",
-                    "label": "TZ",
-                    "name": "TZ"
-                },
+					"label": "TZ",
+					"name": "TZ"
+				},
 				{
 					"default": "gitea",
 					"label": "DATABASE_NAME",
@@ -378,16 +357,16 @@
 					"label": "DATABASE_USER",
 					"name": "DATABASE_USER"
 				},
-                {
-                    "label": "DATABASE_PASSWORD",
-                    "name": "DATABASE_PASSWORD",
-                    "default": ""
-                },
 				{
-                    "label": "MYSQL_ROOT_PASSWORD",
-                    "name": "MYSQL_ROOT_PASSWORD",
-                    "default": ""
-                }
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD",
+					"default": ""
+				},
+				{
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD",
+					"default": ""
+				}
 			],
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
@@ -415,12 +394,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "Guacamole",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/Guacamole",
-					"container": "/config"
-				}
-			]
+			"volumes": [{
+				"bind": "/docker/config/Guacamole",
+				"container": "/config"
+			}]
 		},
 		{
 			"categories": [
@@ -429,8 +406,7 @@
 				"Other"
 			],
 			"description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -452,12 +428,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "Heimdall",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/Heimdall",
-					"container": "/config"
-				}
-			]
+			"volumes": [{
+				"bind": "/docker/config/Heimdall",
+				"container": "/config"
+			}]
 		},
 		{
 			"categories": [
@@ -476,8 +450,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Homer",
 			"type": 1,
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
@@ -488,8 +461,7 @@
 					"name": "PUID"
 				}
 			],
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Homer/assets",
 					"container": "/www/assets"
 				},
@@ -505,8 +477,7 @@
 				"Tools"
 			],
 			"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -527,8 +498,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Jackett",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Jackett",
 					"container": "/config"
 				},
@@ -544,8 +514,7 @@
 				"Tools"
 			],
 			"description": "JDownloader docker image",
-			"env": [
-				{
+			"env": [{
 					"default": "",
 					"label": "MYJD_DEVICE_NAME",
 					"name": "MYJD_DEVICE_NAME"
@@ -571,8 +540,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "JDownloader",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/JDownloader",
 					"container": "/opt/JDownloader/cfg"
 				},
@@ -587,8 +555,7 @@
 				"Books"
 			],
 			"description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -609,8 +576,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "LazyLibrarian",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/LazyLib",
 					"container": "/config"
 				},
@@ -630,8 +596,7 @@
 				"Tools"
 			],
 			"description": "An Enhanced drop in replacement for Mysql",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -642,21 +607,21 @@
 					"name": "PGID"
 				},
 				{
-                    "label": "MYSQL_DATABASE",
-                    "name": "MYSQL_DATABASE",
-                    "default": ""
-                },
+					"label": "MYSQL_DATABASE",
+					"name": "MYSQL_DATABASE",
+					"default": ""
+				},
 				{
 					"label": "MYSQL_USER",
 					"name": "MYSQL_USER",
 					"default": ""
 				},
 				{
-                    "label": "MYSQL_PASSWORD",
-                    "name": "MYSQL_PASSWORD",
-                    "default": "dbpassword"
+					"label": "MYSQL_PASSWORD",
+					"name": "MYSQL_PASSWORD",
+					"default": "dbpassword"
 				},
-                {
+				{
 					"label": "MYSQL_ROOT_PASSWORD",
 					"name": "MYSQL_ROOT_PASSWORD",
 					"default": "rootpassword"
@@ -672,12 +637,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "MariaDB",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/Mariadb",
-					"container": "/config"
-				}
-			]
+			"volumes": [{
+				"bind": "/docker/config/Mariadb",
+				"container": "/config"
+			}]
 		},
 		{
 			"categories": [
@@ -696,14 +659,11 @@
 			"restart_policy": "unless-stopped",
 			"title": "Mealie",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/mealie",
-					"container": "/app/data"
-				}
-			],
-			"env": [
-				{
+			"volumes": [{
+				"bind": "/docker/config/mealie",
+				"container": "/app/data"
+			}],
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -766,8 +726,7 @@
 				"Tools"
 			],
 			"description": "n8n is an extendable workflow automation tool.",
-			"env": [
-				{
+			"env": [{
 					"default": "true",
 					"label": "N8N_BASIC_AUTH_ACTIVE",
 					"name": "N8N_BASIC_AUTH_ACTIVE"
@@ -793,12 +752,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "n8n",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/n8n",
-					"container": "/home/node/.n8n"
-				}
-			]
+			"volumes": [{
+				"bind": "/portainer/Files/AppData/Config/n8n",
+				"container": "/home/node/.n8n"
+			}]
 		},
 		{
 			"categories": [
@@ -806,8 +763,7 @@
 				"Tools"
 			],
 			"description": "Troubleshoot slowdowns and anomalies in your infrastructure with thousands of per-second metrics, meaningful visualizations, and insightful health alarms with zero configuration.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "DOCKER_USR",
 					"name": "DOCKER_USR"
@@ -828,8 +784,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Netdata",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/netdata/netdataconfig",
 					"container": "/etc/netdata"
 				},
@@ -868,8 +823,7 @@
 				"Web"
 			],
 			"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -918,8 +872,7 @@
 				"Web"
 			],
 			"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -940,12 +893,10 @@
 			],
 			"title": "NextcloudPi",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/Docker/Config/ncdata",
-					"container": "/data"
-				}
-			]
+			"volumes": [{
+				"bind": "/Docker/Config/ncdata",
+				"container": "/data"
+			}]
 		},
 		{
 			"categories": [
@@ -953,8 +904,7 @@
 				"Proxy"
 			],
 			"description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -976,12 +926,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "Nginx",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/Nginx",
-					"container": "/config"
-				}
-			]
+			"volumes": [{
+				"bind": "/docker/config/Nginx",
+				"container": "/config"
+			}]
 		},
 		{
 			"categories": [
@@ -997,8 +945,7 @@
 				"81:81/tcp",
 				"443:443/tcp"
 			],
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -1008,11 +955,11 @@
 					"label": "PGID",
 					"name": "PGID"
 				},
-                {
+				{
 					"default": "America/Costa_Rica",
-                    "label": "TZ",
-                    "name": "TZ"
-                },
+					"label": "TZ",
+					"name": "TZ"
+				},
 				{
 					"default": "password",
 					"label": "DATABASE_PASSWORD",
@@ -1023,7 +970,7 @@
 					"label": "MYSQL_ROOT_PASSWORD",
 					"name": "MYSQL_ROOT_PASSWORD"
 				}
-				
+
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Nginx Proxy Manager",
@@ -1032,14 +979,13 @@
 				"stackfile": "stack/nginx-proxy-manager.yml",
 				"url": "https://github.com/novaspirit/pi-hosted"
 			}
-		},		
+		},
 		{
 			"categories": [
 				"Other"
 			],
 			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
-			"env": [
-				{
+			"env": [{
 					"label": "INTERFACE",
 					"name": "INTERFACE",
 					"default": "eth0"
@@ -1067,12 +1013,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "OpenVPN Access Server",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/OpenVPN-AS",
-					"container": "/config"
-				}
-			]
+			"volumes": [{
+				"bind": "/docker/config/OpenVPN-AS",
+				"container": "/config"
+			}]
 		},
 		{
 			"categories": [
@@ -1095,8 +1039,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Pi-Hole",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/PiHole",
 					"container": "/etc/pihole"
 				},
@@ -1112,8 +1055,7 @@
 				"Music"
 			],
 			"description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -1137,8 +1079,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Plex",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Plex",
 					"container": "/config"
 				},
@@ -1157,8 +1098,7 @@
 				"Downloaders"
 			],
 			"description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -1173,11 +1113,11 @@
 					"label": "WEBUI_PORT",
 					"name": "WEBUI_PORT"
 				},
-                {
+				{
 					"default": "America/Costa_Rica",
-                    "label": "TZ",
-                    "name": "TZ"
-                }
+					"label": "TZ",
+					"name": "TZ"
+				}
 			],
 			"image": "linuxserver/qbittorrent:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/qbittorrent-icon.png",
@@ -1191,8 +1131,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "qBittorrent",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/qBittorrent",
 					"container": "/config"
 				},
@@ -1208,8 +1147,7 @@
 				"Video"
 			],
 			"description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -1230,8 +1168,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Radarr",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Radarr",
 					"container": "/config"
 				},
@@ -1262,12 +1199,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "Snippet-box",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/Snippet-box",
-					"container": "/app/data"
-				}
-			]
+			"volumes": [{
+				"bind": "/docker/config/Snippet-box",
+				"container": "/app/data"
+			}]
 		},
 		{
 			"categories": [
@@ -1275,8 +1210,7 @@
 				"Video"
 			],
 			"description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -1297,8 +1231,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Sonarr",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Sonarr",
 					"container": "/config"
 				},
@@ -1327,7 +1260,7 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Sshwifty",
-			"type": 1,
+			"type": 1
 		},
 		{
 			"categories": [
@@ -1337,8 +1270,7 @@
 				"Tools"
 			],
 			"description": null,
-			"env": [
-				{
+			"env": [{
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
@@ -1361,8 +1293,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "SyncThing",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Syncthing",
 					"container": "/config"
 				},
@@ -1371,7 +1302,7 @@
 				}
 			]
 		},
-	{
+		{
 			"categories": [
 				"Proxy",
 				"Security",
@@ -1391,8 +1322,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Traefik",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/traefik/traefik.yml",
 					"container": "/traefik.yml"
 				},
@@ -1426,8 +1356,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Wikijs",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/Wikijs",
 					"container": "/config"
 				},
@@ -1445,7 +1374,7 @@
 			"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
 			"image": "hectormolinero/qemu-win2000:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/win2000.png",
-			"note":"Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
+			"note": "Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
 			"name": "win2000",
 			"platform": "linux",
 			"ports": [
@@ -1456,12 +1385,10 @@
 			"restart_policy": "unless-stopped",
 			"title": "Windows 2000",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/docker/config/Win2000/zdrive",
-					"container": "/mnt"
-				}
-			]
+			"volumes": [{
+				"bind": "/docker/config/Win2000/zdrive",
+				"container": "/mnt"
+			}]
 		},
 		{
 			"categories": [
@@ -1496,49 +1423,46 @@
 			"restart_policy": "unless-stopped",
 			"title": "Whoogle",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Whoogle",
-					"container": "/config"
-				}
-			],
+			"volumes": [{
+				"bind": "/portainer/Files/AppData/Config/Whoogle",
+				"container": "/config"
+			}]
 		},
-	{
-			"categories":[
+		{
+			"categories": [
 				"WordPress",
 				"Web"
 			],
-			"description":"Wordpress setup with a MySQL database",
-			"env":[
-				{
+			"description": "Wordpress setup with a MySQL database",
+			"env": [{
 					"default": "5080",
-					"name":"WEB_SERVER_PORT",
-					"label":"External Port for webserver forward to port 80"
+					"name": "WEB_SERVER_PORT",
+					"label": "External Port for webserver forward to port 80"
 				},
 				{
 					"default": "wordpress",
-					"name":"MYSQL_DATABASE_USER_NAME",
-					"label":"Database user name"
+					"name": "MYSQL_DATABASE_USER_NAME",
+					"label": "Database user name"
 				},
 				{
-					"name":"MYSQL_DATABASE_PASSWORD",
-					"label":"Database password for user"
+					"name": "MYSQL_DATABASE_PASSWORD",
+					"label": "Database password for user"
 				},
 				{
-					"name":"MYSQL_DATABASE_ROOT_PASSWORD",
-					"label":"Database root password"
+					"name": "MYSQL_DATABASE_ROOT_PASSWORD",
+					"label": "Database root password"
 				}
 			],
-			"logo":"https://raw.githubusercontent.com/Steveincr/template/main/images/wordpress.png",
-			"note":"Deploys a Wordpress instance connected to a MySQL database.",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/wordpress.png",
+			"note": "Deploys a Wordpress instance connected to a MySQL database.",
 
-			"platform":"linux",
+			"platform": "linux",
 
-			"repository":{
+			"repository": {
 				"url": "https://github.com/novaspirit/pi-hosted",
 				"stackfile": "stack/wordpress-stack.yml"
 			},
-			"title":"Wordpress",
+			"title": "Wordpress",
 			"type": 3
 		},
 		{
@@ -1557,8 +1481,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "YouTubeDL-Material",
 			"type": 1,
-			"volumes": [
-				{
+			"volumes": [{
 					"bind": "/docker/config/YTDLM",
 					"container": "/app/appdata"
 				},
