@@ -172,7 +172,7 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/docker/downloads",
+					"bind": "/data/downloads",
 					"container": "/downloads"
 				}
 			]
@@ -235,7 +235,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -669,7 +669,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -753,7 +753,7 @@
 			"title": "n8n",
 			"type": 1,
 			"volumes": [{
-				"bind": "/portainer/Files/AppData/Config/n8n",
+				"bind": "/docker/config/n8n",
 				"container": "/home/node/.n8n"
 			}]
 		},
@@ -769,7 +769,7 @@
 					"name": "DOCKER_USR"
 				},
 				{
-					"default": "1003",
+					"default": "1000",
 					"label": "DOCKER_GRP",
 					"name": "DOCKER_GRP"
 				}
@@ -1282,7 +1282,7 @@
 				}
 			],
 			"image": "linuxserver/syncthing:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/syncthing-icon.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/syncthing-icon.png",
 			"name": "syncthing",
 			"platform": "linux",
 			"ports": [
@@ -1310,7 +1310,7 @@
 			],
 			"description": "Cloud-Native Networking Stack That Just Works.",
 			"image": "traefik:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/traefik.png",
+			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/traefik.png",
 			"name": "traefik",
 			"note": "A simple and lightweight reverse proxy",
 			"platform": "linux",
@@ -1424,7 +1424,7 @@
 			"title": "Whoogle",
 			"type": 1,
 			"volumes": [{
-				"bind": "/portainer/Files/AppData/Config/Whoogle",
+				"bind": "/docker/config/Whoogle",
 				"container": "/config"
 			}]
 		},
