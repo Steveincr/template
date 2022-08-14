@@ -18,7 +18,7 @@
 			"title": "Archivebox",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/archivebox",
+				"bind": "/dock/config/archivebox",
 				"container": "/data"
 			}],
 			"env": [{
@@ -80,7 +80,7 @@
 					"container": "/books"
 				},
 				{
-					"bind": "/docker/config/Calibre-web",
+					"bind": "/dock/config/Calibre-web",
 					"container": "/config"
 				}
 			]
@@ -131,7 +131,7 @@
 			"title": "Code Server",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/Code-Server",
+				"bind": "/dock/config/Code-Server",
 				"container": "/config"
 			}]
 		},
@@ -168,7 +168,7 @@
 			"title": "Deluge",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Deluge",
+					"bind": "/dock/config/Deluge",
 					"container": "/config"
 				},
 				{
@@ -208,7 +208,7 @@
 			"title": "Duplicati",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Duplicati",
+					"bind": "/dock/config/Duplicati",
 					"container": "/config"
 				},
 				{
@@ -257,7 +257,7 @@
 			"title": "Emby",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Emby",
+					"bind": "/dock/config/Emby",
 					"container": "/config"
 				},
 				{
@@ -314,7 +314,7 @@
 			"title": "Flame",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Flame/data",
+					"bind": "/dock/config/Flame/data",
 					"container": "/app/data"
 				},
 				{
@@ -395,7 +395,7 @@
 			"title": "Guacamole",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/Guacamole",
+				"bind": "/dock/config/Guacamole",
 				"container": "/config"
 			}]
 		},
@@ -429,7 +429,7 @@
 			"title": "Heimdall",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/Heimdall",
+				"bind": "/dock/config/Heimdall",
 				"container": "/config"
 			}]
 		},
@@ -462,11 +462,11 @@
 				}
 			],
 			"volumes": [{
-					"bind": "/docker/config/Homer/assets",
+					"bind": "/dock/config/Homer/assets",
 					"container": "/www/assets"
 				},
 				{
-					"bind": "/docker/config/Homer",
+					"bind": "/dock/config/Homer",
 					"container": "/www/config.yml"
 				}
 			]
@@ -499,7 +499,7 @@
 			"title": "Jackett",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Jackett",
+					"bind": "/dock/config/Jackett",
 					"container": "/config"
 				},
 				{
@@ -541,7 +541,7 @@
 			"title": "JDownloader",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/JDownloader",
+					"bind": "/dock/config/JDownloader",
 					"container": "/opt/JDownloader/cfg"
 				},
 				{
@@ -577,7 +577,7 @@
 			"title": "LazyLibrarian",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/LazyLib",
+					"bind": "/dock/config/LazyLib",
 					"container": "/config"
 				},
 				{
@@ -638,7 +638,7 @@
 			"title": "MariaDB",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/Mariadb",
+				"bind": "/dock/config/Mariadb",
 				"container": "/config"
 			}]
 		},
@@ -660,7 +660,7 @@
 			"title": "Mealie",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/mealie",
+				"bind": "/dock/config/mealie",
 				"container": "/app/data"
 			}],
 			"env": [{
@@ -753,7 +753,7 @@
 			"title": "n8n",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/n8n",
+				"bind": "/dock/config/n8n",
 				"container": "/home/node/.n8n"
 			}]
 		},
@@ -785,11 +785,11 @@
 			"title": "Netdata",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/netdata/netdataconfig",
+					"bind": "/dock/config/netdata/netdataconfig",
 					"container": "/etc/netdata"
 				},
 				{
-					"bind": "/docker/config/netdata/netdatalib",
+					"bind": "/dock/config/netdata/netdatalib",
 					"container": "/var/lib/netdata"
 				},
 				{
@@ -894,7 +894,7 @@
 			"title": "NextcloudPi",
 			"type": 1,
 			"volumes": [{
-				"bind": "/Docker/Config/ncdata",
+				"bind": "/dock/config/ncdata",
 				"container": "/data"
 			}]
 		},
@@ -927,7 +927,7 @@
 			"title": "Nginx",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/Nginx",
+				"bind": "/dock/config/Nginx",
 				"container": "/config"
 			}]
 		},
@@ -1014,7 +1014,7 @@
 			"title": "OpenVPN Access Server",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/OpenVPN-AS",
+				"bind": "/dock/config/OpenVPN-AS",
 				"container": "/config"
 			}]
 		},
@@ -1040,11 +1040,11 @@
 			"title": "Pi-Hole",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/PiHole",
+					"bind": "/dock/config/PiHole",
 					"container": "/etc/pihole"
 				},
 				{
-					"bind": "/docker/config/PiHole/DNS",
+					"bind": "/dock/config/PiHole/DNS",
 					"container": "/etc/dnsmasq.d"
 				}
 			]
@@ -1080,7 +1080,7 @@
 			"title": "Plex",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Plex",
+					"bind": "/dock/config/Plex",
 					"container": "/config"
 				},
 				{
@@ -1132,7 +1132,7 @@
 			"title": "qBittorrent",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/qBittorrent",
+					"bind": "/dock/config/qBittorrent",
 					"container": "/config"
 				},
 				{
@@ -1169,7 +1169,7 @@
 			"title": "Radarr",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Radarr",
+					"bind": "/dock/config/Radarr",
 					"container": "/config"
 				},
 				{
@@ -1200,7 +1200,7 @@
 			"title": "Snippet-box",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/Snippet-box",
+				"bind": "/dock/config/Snippet-box",
 				"container": "/app/data"
 			}]
 		},
@@ -1232,7 +1232,7 @@
 			"title": "Sonarr",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Sonarr",
+					"bind": "/dock/config/Sonarr",
 					"container": "/config"
 				},
 				{
@@ -1294,7 +1294,7 @@
 			"title": "SyncThing",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Syncthing",
+					"bind": "/dock/config/Syncthing",
 					"container": "/config"
 				},
 				{
@@ -1323,15 +1323,15 @@
 			"title": "Traefik",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/traefik/traefik.yml",
+					"bind": "/dock/config/traefik/traefik.yml",
 					"container": "/traefik.yml"
 				},
 				{
-					"bind": "/docker/config/traefik/config.yml",
+					"bind": "/dock/config/traefik/config.yml",
 					"container": "/config.yml"
 				},
 				{
-					"bind": "/docker/config/traefik/acme.json",
+					"bind": "/dock/config/traefik/acme.json",
 					"container": "acme.json"
 				},
 				{
@@ -1357,11 +1357,11 @@
 			"title": "Wikijs",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/Wikijs",
+					"bind": "/dock/config/Wikijs",
 					"container": "/config"
 				},
 				{
-					"bind": "/docker/config/Wikijs/data",
+					"bind": "/dock/config/Wikijs/data",
 					"container": "/data"
 				}
 			]
@@ -1386,7 +1386,7 @@
 			"title": "Windows 2000",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/Win2000/zdrive",
+				"bind": "/dock/config/Win2000/zdrive",
 				"container": "/mnt"
 			}]
 		},
@@ -1424,7 +1424,7 @@
 			"title": "Whoogle",
 			"type": 1,
 			"volumes": [{
-				"bind": "/docker/config/Whoogle",
+				"bind": "/dock/config/Whoogle",
 				"container": "/config"
 			}]
 		},
@@ -1482,7 +1482,7 @@
 			"title": "YouTubeDL-Material",
 			"type": 1,
 			"volumes": [{
-					"bind": "/docker/config/YTDLM",
+					"bind": "/dock/config/YTDLM",
 					"container": "/app/appdata"
 				},
 				{
