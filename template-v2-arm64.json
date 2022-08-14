@@ -1121,7 +1121,8 @@
 			],
 			"image": "linuxserver/qbittorrent:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/qbittorrent-icon.png",
-			"name": "qbittorrent",
+			"name": "QBittorrent",
+			"note": "The default username is admin with password adminadmin.",
 			"platform": "linux",
 			"ports": [
 				"6881:6881/tcp",
@@ -1136,8 +1137,8 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/data/downloads",
-					"container": "/downloads"
+					"bind": "/data",
+					"container": "/data"
 				}
 			]
 		},
@@ -1223,7 +1224,7 @@
 			],
 			"image": "linuxserver/sonarr:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/sonarr-icon.png",
-			"name": "sonarr",
+			"name": "Sonarr",
 			"platform": "linux",
 			"ports": [
 				"8989:8989/tcp"
