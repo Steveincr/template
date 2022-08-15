@@ -53,7 +53,7 @@
 				"Cloud",
 				"Books"
 			],
-			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
+			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.<br>Where Calibre-web should store it's database<br>/books Path to your calibre library metadata.db file",
 			"env": [{
 					"default": "1000",
 					"label": "PUID",
@@ -68,6 +68,7 @@
 			"image": "linuxserver/calibre-web:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/calibre-web-icon.png",
 			"name": "calibre-web",
+			"note": "The default user and password is admin/admin123.",
 			"platform": "linux",
 			"ports": [
 				"8083:8083/tcp"
