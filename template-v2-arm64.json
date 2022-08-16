@@ -53,7 +53,7 @@
 				"Cloud",
 				"Books"
 			],
-			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.<br>Where Calibre-web should store it's database<br>/books Path to your calibre library metadata.db file",
+			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.",
 			"env": [{
 					"default": "1000",
 					"label": "PUID",
