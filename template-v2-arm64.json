@@ -1,6 +1,7 @@
 {
 	"version": "2",
-	"templates": [{
+	"templates": [
+		{
 			"categories": [
 				"Other",
 				"Tools"
