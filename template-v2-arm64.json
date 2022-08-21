@@ -127,7 +127,7 @@
 			"name": "code-server",
 			"platform": "linux",
 			"ports": [
-				"8443:8443/tcp"
+				"4443:8443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Code Server",
