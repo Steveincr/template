@@ -263,12 +263,8 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/data/media/tv",
-					"container": "/data/tvshows"
-				},
-				{
-					"bind": "/data/media/movies",
-					"container": "/data/movies"
+					"bind": "/data",
+					"container": "/data"
 				}
 			]
 		},
