@@ -1341,29 +1341,6 @@
 		},
 		{
 			"categories": [
-				"Monitor",
-				"Tools"
-			],
-			"description": "It is a self-hosted monitoring tool like 'Uptime Robot'.",
-			"image": "louislam/uptime-kuma:latest",
-			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/uptime-kuma.png",
-			"name": "UptimeKuma",
-			"platform": "linux",
-			"ports": [
-				"3001:3001/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Uptime Kuma",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/dock/config/UptimeKuma",
-					"container": "/app/data"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Other",
 				"Tools"
 			],
