@@ -1348,7 +1348,7 @@
 			"image": "louislam/uptime-kuma:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/uptime-kuma.png",
 			"name": "UptimeKuma",
-\			"platform": "linux",
+			"platform": "linux",
 			"ports": [
 				"3001:3001/tcp"
 			],
