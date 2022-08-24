@@ -1347,9 +1347,8 @@
 			"description": "It is a self-hosted monitoring tool like 'Uptime Robot'.",
 			"image": "louislam/uptime-kuma:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/uptime-kuma.png",
-			"name": "uptime-kuma",
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/louislam/uptime-kuma\" target=\"_blank\">https://github.com/louislam/uptime-kuma</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install#-docker\" target=\"_blank\">https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install#-docker</a><br><br><br>A fancy self-hosted monitoring tool.",
-			"platform": "linux",
+			"name": "UptimeKuma",
+\			"platform": "linux",
 			"ports": [
 				"3001:3001/tcp"
 			],
@@ -1358,7 +1357,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "dock/config/Uptime-Kuma",
+					"bind": "/dock/config/UptimeKuma",
 					"container": "/app/data"
 				}
 			]
