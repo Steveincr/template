@@ -469,7 +469,55 @@
 				}
 			]
 		},
-		{
+		"categories": [
+			"Video",
+			"Music"
+		],
+		"description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
+		"env": [
+			{
+				"default": "1000",
+				"label": "PUID",
+				"name": "PUID"
+			},
+			{
+				"default": "1000",
+				"label": "PGID",
+				"name": "PGID"
+			},
+			{
+				"default": "America/Costa_Rica",
+				"label": "TZ",
+				"name": "TZ"
+			}
+		],
+		"image": "linuxserver/jellyfin:latest",
+		"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/jellyfin.png",
+		"name": "jellyfin",
+		"platform": "linux",
+		"ports": [
+			"8098:8096/tcp",
+			"8922:8920/tcp"
+		],
+		"restart_policy": "unless-stopped",
+		"title": "Jellyfin",
+		"type": 1,
+		"volumes": [
+			{
+				"bind": "/dock/config/Jelllyfin",
+				"container": "/config"
+			},
+			{
+				"bind": "/portainer/TV",
+				"container": "/data"
+			},
+			{
+				"bind": "/portainer/Movies",
+				"container": "/data"
+			}
+		],
+	},
+	{
 			"categories": [
 				"Downloaders",
 				"Tools"
