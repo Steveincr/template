@@ -469,7 +469,8 @@
 				}
 			]
 		},
-		"categories": [
+		{
+			"categories": [
 			"Video",
 			"Music"
 		],
