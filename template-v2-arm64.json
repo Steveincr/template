@@ -3,6 +3,63 @@
 	"templates": [
 		{
 			"categories": [
+				"Music"
+			],
+			"description": "Airsonic Advanced is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/Costa_Rica",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "airsonic",
+					"label": "CONTEXT_PATH",
+					"name": "CONTEXT_PATH"
+				},
+				{
+					"default": "-Xms256m -Xmx512m",
+					"label": "JAVA_OPTS",
+					"name": "JAVA_OPTS"
+				}
+			],
+			"image": "linuxserver/airsonic-advanced:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",
+			"name": "Airsonic2",
+			"platform": "linux",
+			"ports": [
+				"4040:4040/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Airsonic Advanced",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/data/media/music",
+					"container": "/music"
+				},
+				{
+					"bind": "data/media/playlists",
+					"container": "/playlists"
+				},
+				{
+					"bind": "/dock/config/Airsonic2",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
