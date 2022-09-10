@@ -139,6 +139,44 @@
 		},
 		{
 			"categories": [
+				"Music"
+			],
+			"description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/daapd:latest",
+			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
+			"name": "Daapd",
+			"platform": "linux",
+			"ports": [
+				"3689:3689/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Daapd",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/dock/config/Daapd",
+					"container": "/config"
+				},
+				{
+					"bind": "/data/media/music",
+					"container": "/music"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders"
 			],
 			"description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
