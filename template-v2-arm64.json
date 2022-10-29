@@ -147,6 +147,30 @@
 		{
 			"categories": [
 				"Other",
+				"Tools",
+				"VPN",
+				"Proxy"
+			],
+			"description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. With Tunnel, you do not send traffic to an external IP — instead, a lightweight daemon in your infrastructure (cloudflared) creates outbound-only connections to Cloudflare's edge.",
+			"env": [
+				{
+					"default": "Your_Tunnel_Token_From_The_Zero_Dashboard_Access_Tunnel",
+					"label": "token",
+					"name": "TUNNEL_TOKEN"
+				}
+			],
+			"image": "cloudflare/cloudflared:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cloudflared.svg",
+			"name": "cloudflared-tunnel",
+			"platform": "linux",
+			"command": "tunnel run",
+			"restart_policy": "unless-stopped",
+			"title": "Cloudflared Tunnel",
+			"type": 1
+		},
+		{
+			"categories": [
+				"Other",
 				"Tools"
 			],
 			"description": "Code-server is VS Code running on a remote server, accessible through the browser.",
@@ -525,6 +549,32 @@
 				"bind": "/dock/config/Heimdall",
 				"container": "/config"
 			}]
+		},
+		{
+			"categories": [
+				"Dashboard"
+			],
+			"description": "Homepage helps you organize your self-hosted services by making them accessible from a single place",
+			"image": "ghcr.io/benphelps/homepage:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homepage.png",
+			"name": "Homepage",
+			"platform": "linux",
+			"ports": [
+				"3015:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Homepage",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/dock/config/Homepage/",
+					"container": "/app/config"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			]
 		},
 		{
 			"categories": [
@@ -1188,6 +1238,40 @@
 				{
 					"bind": "/dock/config/PiHole/DNS",
 					"container": "/etc/dnsmasq.d"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Photos"
+			],
+			"description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/piwigo:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/piwigo-icon.png",
+			"name": "piwigo",
+			"platform": "linux",
+			"ports": [
+				"7528:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Piwigo",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/dock/config/PiWigo",
+					"container": "/config"
 				}
 			]
 		},
