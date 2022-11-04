@@ -573,6 +573,14 @@
 				{
 					"bind": "/var/run/docker.sock",
 					"container": "/var/run/docker.sock"
+				},
+				{
+					"bind": "/mnt",
+					"container": "/mnt"
+				},
+				{
+					"bind": "/app/public/icons",
+					"container": "/nas/Dev/Docker/icons"
 				}
 			]
 		},
