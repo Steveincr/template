@@ -916,7 +916,7 @@
 			"description": "A self-hosted recipe manager and meal planner",
 			"image": "hkotel/mealie:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/mealie.png",
-			"name": "mealie",
+			"name": "Mealie",
 			"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available \u003ca href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
 			"ports": [
@@ -926,7 +926,7 @@
 			"title": "Mealie",
 			"type": 1,
 			"volumes": [{
-				"bind": "/dock/config/mealie",
+				"bind": "/dock/config/Mealie",
 				"container": "/app/data"
 			}],
 			"env": [{
