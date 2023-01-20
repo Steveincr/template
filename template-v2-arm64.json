@@ -1373,9 +1373,12 @@
 			],
 			"image": "linuxserver/plex:latest",
 			"logo": "https://raw.githubusercontent.com/Steveincr/template/main/images/plex-icon.png",
-			"name": "plex",
+			"name": "Plex",
 			"network": "host",
 			"platform": "linux",
+			"ports": [
+				"32400:32400/tcp"
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Plex",
 			"type": 1,
@@ -1384,12 +1387,12 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/data/media/tv",
-					"container": "/tv"
+					"bind": "/data/media",
+					"container": "/data"
 				},
 				{
-					"bind": "/data/media/movies",
-					"container": "/movies"
+					"bind": "/nas/Media",
+					"container": "/nas"
 				}
 			]
 		},
